@@ -1,0 +1,65 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container > div {
+    width: 100px;
+    flex-grow: 8;
+}
+
+.flex-container > div:last-child {
+    width: 100px;
+    margin: 0 15px;
+    flex-grow: 3;
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex-container > div {
+        width: 100px;
+        margin: 0;
+        flex-basis: 100%;
+    }
+
+    .flex-container > div:last-child {
+        width: 100px;
+        margin: 20px 0;
+        flex-basis: 100%;
+    }
+
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flex-container > div {
+        width: 100px;
+        margin: 0;
+        flex-basis: 100%;
+    }
+
+    .flex-container > div:last-child {
+        width: 100px;
+        margin: 20px 0;
+        flex-basis: 100%;
+    }
+}
+

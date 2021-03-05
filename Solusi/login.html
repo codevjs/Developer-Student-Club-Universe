@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk | Get to know firebase for WEB</title>
+    <link rel="shortcut icon" href="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+<header>
+    <nav style="overflow: auto">
+        <section class="container">
+            <div style="float: left">
+                <a href="/">
+                    <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" alt=""/>
+                </a>
+            </div>
+            <div style="float: right">
+                <ul class="navbar">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/create.html">Tambah Artikel</a>
+                    </li>
+                    <li>
+                        <button id="logout">Keluar</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+</header>
+
+<main>
+    <section class="container">
+        <div id="content" class="flex-container">
+
+            <div style="min-height: 400px;" id="root">
+                <form>
+                    <label>Email</label>
+                    <input type="email" name="email" required/>
+                    <br/>
+                    <br/>
+                    <label>Password</label>
+                    <input type="password" name="password" required />
+                    <br/>
+                    <br/>
+                    <Button id="button-submit" type="submit" >
+                        Masuk
+                    </Button>
+                </form>
+
+            </div>
+
+            <div>
+                <div style="width: 100%" id="firebaseui-auth-container"></div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-text">
+        <div class="container" style="text-align: center">
+            <p>© Renaldi Pranata | Firebase for WEB</p>
+        </div>
+    </div>
+</footer>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<script src="./assets/js/main.js" ></script>
+<script src="./assets/js/login.js" ></script>
+</body>
+</html>

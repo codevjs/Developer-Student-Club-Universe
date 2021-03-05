@@ -1,0 +1,16 @@
+footer {
+    height: 100px;
+    /*margin-top: 20px;*/
+    /*border-top: 1px solid rgba(135,135,135,0.18);*/
+    /*position: relative;*/
+    display: none;
+}
+
+footer .footer-text {
+    padding: 10px;
+    background-color:rgb(240, 240, 240);
+    font-size: 13px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
