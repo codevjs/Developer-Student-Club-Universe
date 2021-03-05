@@ -1,4 +1,5 @@
 # Cara Hack Nasa Menggunakan HTML
+Aktivitas ini dapat menimbulkan perasaan bersalah, merasa putus asa, rendah diri dan tidak berharga.
 
 ## Get Started
 
