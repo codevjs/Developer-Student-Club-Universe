@@ -1,0 +1,121 @@
+
+/* font face */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import "container.css";
+@import "flex-container.css";
+@import "app-bar.css";
+@import "article.css";
+@import "footer.css";
+@import "profile.css";
+
+* {
+    font-family: 'Quicksand',
+    sans-serif; border-radius: 10px
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+    /*overflow-x: hidden;*/
+}
+
+main {
+    margin-top: 16px;
+}
+
+form {
+    box-shadow: 0 2px 5px 0 rgba(135,135,135,0.18);
+    padding: 15px;
+}
+
+input {
+    min-height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+}
+
+select {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    background: transparent;
+}
+
+input:focus, select:focus {
+    border: 1px solid #ff5483;
+}
+
+textarea {
+    min-height: 150px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+    border-color: #bbb;
+}
+
+textarea:focus {
+    border-color: #ff5483;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ff5483;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+div.firebaseui-card-content {
+    padding: 0 !important;
+}
+
+.firebaseui-idp-button, .firebaseui-tenant-button {
+    border-radius: 10px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+    margin-top: 10px;
+    display: none;
+}
+
+#myBar {
+    width: 1%;
+    height: 10px;
+    background-color: #ff5483;
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+.search-section input {
+    margin-top: 0 !important;
+}
+
+#root {
+    padding-bottom: 20px;
+}
